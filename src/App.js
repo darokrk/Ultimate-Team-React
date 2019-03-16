@@ -3,6 +3,21 @@ import Pitch from "./Components/Pitch/Pitch";
 import "./App.scss";
 
 class App extends Component {
+  state = {
+    players: [
+      { name: "Buffon" },
+      { name: "Lahm" },
+      { name: "Chiellini" },
+      { name: "Ramos" },
+      { name: "Marcelo" },
+      { name: "Kante" },
+      { name: "Messi" },
+      { name: "Modric" },
+      { name: "Neymar" },
+      { name: "Aguero" },
+      { name: "Ronaldo" }
+    ]
+  };
   render() {
     return (
       <div className="App">
