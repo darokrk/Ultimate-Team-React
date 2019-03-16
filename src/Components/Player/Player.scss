@@ -1,5 +1,4 @@
 [class*=player__wrapper-] {
-  border: 1px solid red;
   display: flex;
   height: 55px;
   flex-direction: column;
@@ -35,8 +34,11 @@
 }
 
 .player {
+  display: flex;
   width: 30px;
   height: 30px;
+  justify-content: center;
+  align-items: center;
   border-radius: 30px;
   background: #fff;
 }

@@ -5,17 +5,17 @@ import "./App.scss";
 class App extends Component {
   state = {
     players: [
-      { name: "Buffon" },
-      { name: "Lahm" },
-      { name: "Chiellini" },
-      { name: "Ramos" },
-      { name: "Marcelo" },
-      { name: "Kante" },
-      { name: "Messi" },
-      { name: "Modric" },
-      { name: "Neymar" },
-      { name: "Aguero" },
-      { name: "Ronaldo" }
+      { name: "Buffon", number: 1 },
+      { name: "Lahm", number: 21 },
+      { name: "Chiellini", number: 3 },
+      { name: "Ramos", number: 4 },
+      { name: "Marcelo", number: 12 },
+      { name: "Kante", number: 17 },
+      { name: "Messi", number: 10 },
+      { name: "Modric", number: 8 },
+      { name: "Neymar", number: 11 },
+      { name: "Aguero", number: 19 },
+      { name: "Ronaldo", number: 7 }
     ]
   };
   render() {
