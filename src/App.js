@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Pitch from "./Components/Pitch/Pitch";
 import Bench from "./Components/Bench/Bench";
 import "./App.scss";
+import Header from "./Components/Header/Header";
 
 class App extends Component {
   state = {
@@ -31,7 +32,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>Ultimate Team App</h1>
+        <Header />
         <div className="container">
           <Bench benchPlayers={this.state.benchPlayers} />
           <Pitch players={this.state.players} />
