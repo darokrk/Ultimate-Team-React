@@ -22,7 +22,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Ultimate Team App</h1>
-        <Pitch />
+        <Pitch players={this.state.players} />
       </div>
     );
   }
