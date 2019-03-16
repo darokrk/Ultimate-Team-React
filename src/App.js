@@ -16,6 +16,15 @@ class App extends Component {
       { name: "Neymar", number: 11 },
       { name: "Aguero", number: 19 },
       { name: "Ronaldo", number: 7 }
+    ],
+    benchPlayers: [
+      { name: "Cassilas", number: 21 },
+      { name: "Bonucci", number: 19 },
+      { name: "Chiellini", number: 3 },
+      { name: "Silva", number: 2 },
+      { name: "Hazard", number: 14 },
+      { name: "Pogba", number: 6 },
+      { name: "Lewandowski", number: 33 }
     ]
   };
   render() {
