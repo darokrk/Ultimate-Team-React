@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Pitch from "./Components/Pitch/Pitch";
+import Bench from "./Components/Bench/Bench";
 import "./App.scss";
 
 class App extends Component {
@@ -31,7 +32,10 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Ultimate Team App</h1>
-        <Pitch players={this.state.players} />
+        <div className="container">
+          <Bench benchPlayers={this.state.benchPlayers} />
+          <Pitch players={this.state.players} />
+        </div>
       </div>
     );
   }
