@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Square from "./Components/Square/Square";
+import Pitch from "./Components/Pitch/Pitch";
 import "./App.scss";
 
 class App extends Component {
@@ -7,7 +7,7 @@ class App extends Component {
     return (
       <div className="App">
         <h1>Ultimate Team App</h1>
-        <Square />
+        <Pitch />
       </div>
     );
   }
