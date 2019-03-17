@@ -1,5 +1,6 @@
 import React from "react";
 import Player from "../Player/Player";
+import Overall from "../Overall/Overall";
 import "./Pitch.scss";
 
 const Pitch = props => {
@@ -32,10 +33,7 @@ const Pitch = props => {
           {playersOnTheField}
         </div>
       </div>
-      <h3>
-        Your team overall power:
-        {overallPower}
-      </h3>
+      <Overall text={overallPower} />
     </>
   );
 };

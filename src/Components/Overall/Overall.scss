@@ -1,0 +1,22 @@
+.overall__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.overall__slogan {}
+
+.overall__circle {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  padding: 20px;
+  border: 2px solid blue;
+  border-radius: 50%;
+  font-size: 2.8rem;
+  font-weight: 600;
+}
