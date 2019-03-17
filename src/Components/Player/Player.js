@@ -4,7 +4,12 @@ import "./Player.scss";
 const Player = props => {
   return (
     <div className={`player__wrapper-${props.index}`}>
-      <div className="player">{props.player.number}</div>
+      <div
+        className={props.pickedPlayers ? "player picked" : "player"}
+        onClick={() => props.handleSelectPlayer(props.player.name)}
+      >
+        {props.player.number}
+      </div>
       {props.player.name}
     </div>
   );
