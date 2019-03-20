@@ -4,16 +4,13 @@ import "./Bench.scss";
 
 const Bench = props => {
   const playersOnBench = props.benchPlayers.map((player, i) => {
-    const pickedPlayers = props.pickedPlayers.filter(
-      pickedPlayer => pickedPlayer === player.name
-    );
     return (
       <Player
         key={player.name}
         player={player}
         index={i}
         handleSelectPlayer={props.handleSelectPlayer}
-        pickedPlayers={pickedPlayers.length >= 1 ? pickedPlayers : null}
+        selected={player.selected}
       />
     );
   });

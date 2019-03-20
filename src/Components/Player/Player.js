@@ -5,8 +5,8 @@ const Player = props => {
   return (
     <div className={`player__wrapper-${props.index}`}>
       <div
-        className={props.pickedPlayers ? "player picked" : "player"}
-        onClick={() => props.handleSelectPlayer(props.player.name)}
+        className={props.selected ? "player picked" : "player"}
+        onClick={() => props.handleSelectPlayer(props.player, props.index)}
       >
         {props.player.number}
       </div>

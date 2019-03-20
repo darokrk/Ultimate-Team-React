@@ -13,16 +13,14 @@ const Pitch = props => {
   overallPower = parseFloat(overallPower / 11).toFixed(2);
 
   const playersOnTheField = players.map((player, i) => {
-    const pickedPlayers = props.pickedPlayers.filter(
-      pickedPlayer => pickedPlayer === player.name
-    );
     return (
       <Player
         key={player.name}
+        id={player.name}
         player={player}
         index={i}
+        selected={player.selected}
         handleSelectPlayer={props.handleSelectPlayer}
-        pickedPlayers={pickedPlayers.length >= 1 ? pickedPlayers : null}
       />
     );
   });
