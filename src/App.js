@@ -20,7 +20,7 @@ class App extends Component {
       { name: "Ronaldo", number: 7, overall: 95, selected: false }
     ],
     benchPlayers: [
-      { name: "Casillas", number: 21, overall: 84, selected: false },
+      { name: "Casillas", number: 24, overall: 84, selected: false },
       { name: "Bonucci", number: 19, overall: 87, selected: false },
       { name: "Pique", number: 31, overall: 88, selected: false },
       { name: "Silva", number: 2, overall: 89, selected: false },
@@ -55,6 +55,35 @@ class App extends Component {
 
     this.setState({ players, selectedPlayers });
   };
+
+  pitchUpdate = () => {
+    const players = [...this.state.players].map(player => {
+      if (player.selected) {
+        const selectedPlayers = [...this.state.selectedPlayers].filter(
+          selectedPlayer => selectedPlayer.name !== player.name
+        );
+        return (player = selectedPlayers[0]);
+      }
+      return player;
+    });
+    return players;
+  };
+
+  clearSelected = () => {
+    let players = [...this.state.players];
+    players.forEach(player => {
+      player.selected = false;
+      return player;
+    });
+  };
+
+  componentDidUpdate() {
+    if (this.state.selectedPlayers.length === 2) {
+      const players = this.pitchUpdate();
+      this.setState({ players, selectedPlayers: [] });
+      this.clearSelected();
+    } else return;
+  }
 
   render() {
     return (
