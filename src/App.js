@@ -82,6 +82,7 @@ class App extends Component {
         selected: false,
         img:
           "https://futhead.cursecdn.com/static/img/18/players_worldcup/20801.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/45.png",
         nationality: "https://futhead.cursecdn.com/static/img/19/nations/38.png"
       },
       {
@@ -90,6 +91,7 @@ class App extends Component {
         overall: 90,
         selected: false,
         img: "https://futhead.cursecdn.com/static/img/19/players/153079.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/10.png",
         nationality: "https://futhead.cursecdn.com/static/img/19/nations/52.png"
       },
       {
@@ -98,6 +100,7 @@ class App extends Component {
         overall: 93,
         selected: false,
         img: "https://futhead.cursecdn.com/static/img/17/players/190871.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/73.png",
         nationality: "https://futhead.cursecdn.com/static/img/19/nations/54.png"
       },
       {
@@ -106,6 +109,7 @@ class App extends Component {
         overall: 92,
         selected: false,
         img: "https://futhead.cursecdn.com/static/img/19/players/177003.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/243.png",
         nationality: "https://futhead.cursecdn.com/static/img/19/nations/10.png"
       },
       {
@@ -115,6 +119,7 @@ class App extends Component {
         selected: false,
         img:
           "https://futhead.cursecdn.com/static/img/18/players_worldcup/158023.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/241.png",
         nationality: "https://futhead.cursecdn.com/static/img/19/nations/52.png"
       },
       {
@@ -123,6 +128,7 @@ class App extends Component {
         overall: 91,
         selected: false,
         img: "https://futhead.cursecdn.com/static/img/19/players/215914.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/5.png",
         nationality: "https://futhead.cursecdn.com/static/img/19/nations/18.png"
       },
       {
@@ -131,6 +137,7 @@ class App extends Component {
         overall: 89,
         selected: false,
         img: "https://futhead.cursecdn.com/static/img/19/players/176676.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/243.png",
         nationality: "https://futhead.cursecdn.com/static/img/19/nations/54.png"
       },
       {
@@ -139,6 +146,7 @@ class App extends Component {
         overall: 92,
         selected: false,
         img: "https://futhead.cursecdn.com/static/img/19/players/155862.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/243.png",
         nationality: "https://futhead.cursecdn.com/static/img/19/nations/45.png"
       },
       {
@@ -147,6 +155,7 @@ class App extends Component {
         overall: 91,
         selected: false,
         img: "https://futhead.cursecdn.com/static/img/19/players/138956.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/45.png",
         nationality: "https://futhead.cursecdn.com/static/img/19/nations/27.png"
       },
       {
@@ -155,6 +164,7 @@ class App extends Component {
         overall: 88,
         selected: false,
         img: "https://futhead.cursecdn.com/static/img/19/players/204963.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/243.png",
         nationality: "https://futhead.cursecdn.com/static/img/19/nations/45.png"
       },
       {
@@ -163,6 +173,7 @@ class App extends Component {
         overall: 88,
         selected: false,
         img: "https://futhead.cursecdn.com/static/img/19/players/1179.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/73.png",
         nationality: "https://futhead.cursecdn.com/static/img/19/nations/27.png"
       }
     ],
