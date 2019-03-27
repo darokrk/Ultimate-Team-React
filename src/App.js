@@ -6,72 +6,153 @@ import Header from "./Components/Header/Header";
 
 class App extends Component {
   state = {
+    // players: [
+    //   {
+    //     name: "Buffon",
+    //     number: 1,
+    //     overall: 88,
+    //     selected: false
+    //   },
+    //   {
+    //     name: "Carvajal",
+    //     number: 21,
+    //     overall: 88,
+    //     selected: false
+    //   },
+    //   {
+    //     name: "Chiellini",
+    //     number: 3,
+    //     overall: 91,
+    //     selected: false
+    //   },
+    //   {
+    //     name: "Ramos",
+    //     number: 4,
+    //     overall: 92,
+    //     selected: false
+    //   },
+    //   {
+    //     name: "Marcelo",
+    //     number: 12,
+    //     overall: 89,
+    //     selected: false
+    //   },
+    //   {
+    //     name: "Kante",
+    //     number: 17,
+    //     overall: 91,
+    //     selected: false
+    //   },
+    //   {
+    //     name: "Messi",
+    //     number: 10,
+    //     overall: 95,
+    //     selected: false
+    //   },
+    //   {
+    //     name: "Modric",
+    //     number: 8,
+    //     overall: 92,
+    //     selected: false
+    //   },
+    //   {
+    //     name: "Neymar",
+    //     number: 11,
+    //     overall: 93,
+    //     selected: false
+    //   },
+    //   {
+    //     name: "Aguero",
+    //     number: 19,
+    //     overall: 90,
+    //     selected: false
+    //   },
+    //   {
+    //     name: "Ronaldo",
+    //     number: 7,
+    //     overall: 95,
+    //     selected: false
+    //   }
+    // ],
     players: [
       {
-        name: "Buffon",
-        number: 1,
-        overall: 88,
-        selected: false
-      },
-      {
-        name: "Carvajal",
-        number: 21,
-        overall: 88,
-        selected: false
-      },
-      {
-        name: "Chiellini",
-        number: 3,
-        overall: 91,
-        selected: false
-      },
-      {
-        name: "Ramos",
-        number: 4,
-        overall: 92,
-        selected: false
-      },
-      {
-        name: "Marcelo",
-        number: 12,
-        overall: 89,
-        selected: false
-      },
-      {
-        name: "Kante",
-        number: 17,
-        overall: 91,
-        selected: false
-      },
-      {
-        name: "Messi",
-        number: 10,
+        name: "Ronaldo",
+        number: 7,
         overall: 95,
-        selected: false
-      },
-      {
-        name: "Modric",
-        number: 8,
-        overall: 92,
-        selected: false
-      },
-      {
-        name: "Neymar",
-        number: 11,
-        overall: 93,
-        selected: false
+        selected: false,
+        img:
+          "https://futhead.cursecdn.com/static/img/18/players_worldcup/20801.png"
       },
       {
         name: "Aguero",
         number: 19,
         overall: 90,
-        selected: false
+        selected: false,
+        img: "https://futhead.cursecdn.com/static/img/19/players/153079.png"
       },
       {
-        name: "Ronaldo",
-        number: 7,
+        name: "Neymar",
+        number: 11,
+        overall: 93,
+        selected: false,
+        img: "https://futhead.cursecdn.com/static/img/17/players/190871.png"
+      },
+      {
+        name: "Modric",
+        number: 8,
+        overall: 92,
+        selected: false,
+        img: "https://futhead.cursecdn.com/static/img/19/players/177003.png"
+      },
+      {
+        name: "Messi",
+        number: 10,
         overall: 95,
-        selected: false
+        selected: false,
+        img:
+          "https://futhead.cursecdn.com/static/img/18/players_worldcup/158023.png"
+      },
+      {
+        name: "Kante",
+        number: 17,
+        overall: 91,
+        selected: false,
+        img: "https://futhead.cursecdn.com/static/img/19/players/215914.png"
+      },
+      {
+        name: "Marcelo",
+        number: 12,
+        overall: 89,
+        selected: false,
+        img: "https://futhead.cursecdn.com/static/img/19/players/176676.png"
+      },
+      {
+        name: "Ramos",
+        number: 4,
+        overall: 92,
+        selected: false,
+        img: "https://futhead.cursecdn.com/static/img/19/players/155862.png"
+      },
+      {
+        name: "Chiellini",
+        number: 3,
+        overall: 91,
+        selected: false,
+        img: "https://futhead.cursecdn.com/static/img/19/players/138956.png"
+      },
+      {
+        name: "Carvajal",
+        number: 21,
+        overall: 88,
+        selected: false,
+        img: "https://futhead.cursecdn.com/static/img/19/players/204963.png"
+      },
+      {
+        name: "Buffon",
+        number: 1,
+        overall: 88,
+        selected: false,
+        img: "https://futhead.cursecdn.com/static/img/19/players/1179.png"
       }
     ],
     benchPlayers: [
@@ -160,16 +241,21 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <Header />
         <div className="container">
-          <Bench
+          {/* <Bench
             benchPlayers={this.state.benchPlayers}
             handleSelectPlayer={this.handleSelectPlayer}
             selectedPlayers={this.state.selectedPlayers}
-          />
+          /> */}
           <Pitch
             players={this.state.players}
+            handleSelectPlayer={this.handleSelectPlayer}
+            selectedPlayers={this.state.selectedPlayers}
+          />
+          <Bench
+            benchPlayers={this.state.benchPlayers}
             handleSelectPlayer={this.handleSelectPlayer}
             selectedPlayers={this.state.selectedPlayers}
           />
