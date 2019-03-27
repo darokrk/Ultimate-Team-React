@@ -12,24 +12,11 @@ const Pitch = props => {
   );
   overallPower = parseFloat(overallPower / 11).toFixed(2);
 
-  // const playersOnTheField = players.map((player, i) => {
-  //   return (
-  //     <Player
-  //       key={player.name}
-  //       id={player.name}
-  //       player={player}
-  //       index={i}
-  //       selected={player.selected}
-  //       handleSelectPlayer={props.handleSelectPlayer}
-  //     />
-  //   );
-  // });
-
   const playersOnTheField = players.map((player, i) => {
     return (
       <Player
         key={player.name}
-        id={player.name}
+        // id={player.name}
         player={player}
         index={i}
         selected={player.selected}

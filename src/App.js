@@ -7,17 +7,72 @@ import Header from "./Components/Header/Header";
 class App extends Component {
   state = {
     players: [
-      { name: "Buffon", number: 1, overall: 88, selected: false },
-      { name: "Carvajal", number: 21, overall: 88, selected: false },
-      { name: "Chiellini", number: 3, overall: 91, selected: false },
-      { name: "Ramos", number: 4, overall: 92, selected: false },
-      { name: "Marcelo", number: 12, overall: 89, selected: false },
-      { name: "Kante", number: 17, overall: 91, selected: false },
-      { name: "Messi", number: 10, overall: 95, selected: false },
-      { name: "Modric", number: 8, overall: 92, selected: false },
-      { name: "Neymar", number: 11, overall: 93, selected: false },
-      { name: "Aguero", number: 19, overall: 90, selected: false },
-      { name: "Ronaldo", number: 7, overall: 95, selected: false }
+      {
+        name: "Buffon",
+        number: 1,
+        overall: 88,
+        selected: false
+      },
+      {
+        name: "Carvajal",
+        number: 21,
+        overall: 88,
+        selected: false
+      },
+      {
+        name: "Chiellini",
+        number: 3,
+        overall: 91,
+        selected: false
+      },
+      {
+        name: "Ramos",
+        number: 4,
+        overall: 92,
+        selected: false
+      },
+      {
+        name: "Marcelo",
+        number: 12,
+        overall: 89,
+        selected: false
+      },
+      {
+        name: "Kante",
+        number: 17,
+        overall: 91,
+        selected: false
+      },
+      {
+        name: "Messi",
+        number: 10,
+        overall: 95,
+        selected: false
+      },
+      {
+        name: "Modric",
+        number: 8,
+        overall: 92,
+        selected: false
+      },
+      {
+        name: "Neymar",
+        number: 11,
+        overall: 93,
+        selected: false
+      },
+      {
+        name: "Aguero",
+        number: 19,
+        overall: 90,
+        selected: false
+      },
+      {
+        name: "Ronaldo",
+        number: 7,
+        overall: 95,
+        selected: false
+      }
     ],
     benchPlayers: [
       { name: "Casillas", number: 24, overall: 84, selected: false },
@@ -32,13 +87,17 @@ class App extends Component {
   };
 
   handleSelectPlayer = (activePlayer, index) => {
-    let players = [...this.state.players];
+    const players = [...this.state.players];
+    const benchPlayers = [...this.state.benchPlayers];
     let selectedPlayers = [...this.state.selectedPlayers];
 
     let isSelected = activePlayer.selected;
-    players[index].selected = !isSelected;
 
-    if (activePlayer.selected === false) {
+    if (players.includes(activePlayer)) {
+      players[index].selected = !isSelected;
+    } else benchPlayers[index].selected = !isSelected;
+
+    if (!activePlayer.selected) {
       selectedPlayers = selectedPlayers.filter(
         player => player.selected !== false
       );
@@ -46,42 +105,56 @@ class App extends Component {
 
     if (selectedPlayers.length >= 2) {
       const removedPlayer = selectedPlayers.shift();
-      removedPlayer.selected = false;
+      // removedPlayer.selected = false;
     }
 
     if (activePlayer.selected) {
-      selectedPlayers.push(activePlayer);
+      selectedPlayers.unshift(activePlayer);
     }
 
-    this.setState({ players, selectedPlayers });
+    this.setState({ players, benchPlayers, selectedPlayers });
   };
 
   pitchUpdate = () => {
-    const players = [...this.state.players].map(player => {
-      if (player.selected) {
-        const selectedPlayers = [...this.state.selectedPlayers].filter(
-          selectedPlayer => selectedPlayer.name !== player.name
-        );
-        return (player = selectedPlayers[0]);
-      }
-      return player;
-    });
-    return players;
-  };
-
-  clearSelected = () => {
     let players = [...this.state.players];
+    const benchPlayers = [...this.state.benchPlayers];
+
+    const playerSelected = players.findIndex(player => player.selected);
+    const benchSelected = benchPlayers.findIndex(
+      benchPlayer => benchPlayer.selected
+    );
+
+    if (playerSelected !== -1 && benchSelected !== -1) {
+      const tempPlayer = players[playerSelected];
+      players[playerSelected] = benchPlayers[benchSelected];
+      benchPlayers[benchSelected] = tempPlayer;
+    } else if (playerSelected !== -1 && benchSelected === -1) {
+      const selectedPlayers = [...this.state.selectedPlayers];
+
+      players = players.map(player => {
+        if (player.selected) {
+          const filterPlayer = selectedPlayers.filter(
+            selectedPlayer => selectedPlayer.name !== player.name
+          );
+          player = filterPlayer[0];
+        }
+        return player;
+      });
+    }
+
     players.forEach(player => {
       player.selected = false;
-      return player;
     });
+    benchPlayers.forEach(benchPlayer => {
+      benchPlayer.selected = false;
+    });
+
+    this.setState({ players, benchPlayers, selectedPlayers: [] });
   };
 
   componentDidUpdate() {
-    if (this.state.selectedPlayers.length === 2) {
-      const players = this.pitchUpdate();
-      this.setState({ players, selectedPlayers: [] });
-      this.clearSelected();
+    if (this.state.selectedPlayers.length >= 2) {
+      this.pitchUpdate();
     } else return;
   }
 
