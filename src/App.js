@@ -81,28 +81,32 @@ class App extends Component {
         overall: 95,
         selected: false,
         img:
-          "https://futhead.cursecdn.com/static/img/18/players_worldcup/20801.png"
+          "https://futhead.cursecdn.com/static/img/18/players_worldcup/20801.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/38.png"
       },
       {
         name: "Aguero",
         number: 19,
         overall: 90,
         selected: false,
-        img: "https://futhead.cursecdn.com/static/img/19/players/153079.png"
+        img: "https://futhead.cursecdn.com/static/img/19/players/153079.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/52.png"
       },
       {
         name: "Neymar",
         number: 11,
         overall: 93,
         selected: false,
-        img: "https://futhead.cursecdn.com/static/img/17/players/190871.png"
+        img: "https://futhead.cursecdn.com/static/img/17/players/190871.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/54.png"
       },
       {
         name: "Modric",
         number: 8,
         overall: 92,
         selected: false,
-        img: "https://futhead.cursecdn.com/static/img/19/players/177003.png"
+        img: "https://futhead.cursecdn.com/static/img/19/players/177003.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/10.png"
       },
       {
         name: "Messi",
@@ -110,49 +114,56 @@ class App extends Component {
         overall: 95,
         selected: false,
         img:
-          "https://futhead.cursecdn.com/static/img/18/players_worldcup/158023.png"
+          "https://futhead.cursecdn.com/static/img/18/players_worldcup/158023.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/52.png"
       },
       {
         name: "Kante",
         number: 17,
         overall: 91,
         selected: false,
-        img: "https://futhead.cursecdn.com/static/img/19/players/215914.png"
+        img: "https://futhead.cursecdn.com/static/img/19/players/215914.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/18.png"
       },
       {
         name: "Marcelo",
         number: 12,
         overall: 89,
         selected: false,
-        img: "https://futhead.cursecdn.com/static/img/19/players/176676.png"
+        img: "https://futhead.cursecdn.com/static/img/19/players/176676.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/54.png"
       },
       {
         name: "Ramos",
         number: 4,
         overall: 92,
         selected: false,
-        img: "https://futhead.cursecdn.com/static/img/19/players/155862.png"
+        img: "https://futhead.cursecdn.com/static/img/19/players/155862.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/45.png"
       },
       {
         name: "Chiellini",
         number: 3,
         overall: 91,
         selected: false,
-        img: "https://futhead.cursecdn.com/static/img/19/players/138956.png"
+        img: "https://futhead.cursecdn.com/static/img/19/players/138956.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/27.png"
       },
       {
         name: "Carvajal",
         number: 21,
         overall: 88,
         selected: false,
-        img: "https://futhead.cursecdn.com/static/img/19/players/204963.png"
+        img: "https://futhead.cursecdn.com/static/img/19/players/204963.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/45.png"
       },
       {
         name: "Buffon",
         number: 1,
         overall: 88,
         selected: false,
-        img: "https://futhead.cursecdn.com/static/img/19/players/1179.png"
+        img: "https://futhead.cursecdn.com/static/img/19/players/1179.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/27.png"
       }
     ],
     benchPlayers: [
