@@ -1,5 +1,7 @@
 .bench {
-  background: grey;
+  background: rgba(20, 30, 48, .7);
+  background: -webkit-linear-gradient(to right, rgba(36, 59, 85, .6), rgba(20, 30, 48, .7));
+  background: linear-gradient(to right, rgba(36, 59, 85, .7), rgba(20, 30, 48, .7));
   grid-column-start: 2;
   grid-column-end: 3;
   display: flex;
