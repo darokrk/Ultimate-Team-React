@@ -1,12 +1,11 @@
 .pitch {
-  width: 450px;
-  height: 700px;
-  background: url('../../images/court.jpg');
-  padding: 40px 0;
+  grid-column-start: 2;
+  padding: 0;
+  border: 1px solid;
 }
 
 .field__wrapper {
   display: flex;
-  height: 50%;
+  height: 100%;
   flex-wrap: wrap;
 }

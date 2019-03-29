@@ -8,80 +8,185 @@ class App extends Component {
   state = {
     players: [
       {
-        name: "Buffon",
-        number: 1,
-        overall: 88,
-        selected: false
-      },
-      {
-        name: "Carvajal",
-        number: 21,
-        overall: 88,
-        selected: false
-      },
-      {
-        name: "Chiellini",
-        number: 3,
-        overall: 91,
-        selected: false
-      },
-      {
-        name: "Ramos",
-        number: 4,
-        overall: 92,
-        selected: false
-      },
-      {
-        name: "Marcelo",
-        number: 12,
-        overall: 89,
-        selected: false
-      },
-      {
-        name: "Kante",
-        number: 17,
-        overall: 91,
-        selected: false
-      },
-      {
-        name: "Messi",
-        number: 10,
+        name: "Ronaldo",
+        number: 7,
         overall: 95,
-        selected: false
-      },
-      {
-        name: "Modric",
-        number: 8,
-        overall: 92,
-        selected: false
-      },
-      {
-        name: "Neymar",
-        number: 11,
-        overall: 93,
-        selected: false
+        selected: false,
+        position: "ST",
+        img:
+          "https://futhead.cursecdn.com/static/img/18/players_worldcup/20801.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/45.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/38.png"
       },
       {
         name: "Aguero",
         number: 19,
         overall: 90,
-        selected: false
+        selected: false,
+        position: "ST",
+        img: "https://futhead.cursecdn.com/static/img/19/players/153079.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/10.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/52.png"
       },
       {
-        name: "Ronaldo",
-        number: 7,
+        name: "Neymar",
+        number: 11,
+        overall: 93,
+        selected: false,
+        position: "LM",
+        img: "https://futhead.cursecdn.com/static/img/17/players/190871.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/73.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/54.png"
+      },
+      {
+        name: "Modric",
+        number: 8,
+        overall: 92,
+        selected: false,
+        position: "CM",
+        img: "https://futhead.cursecdn.com/static/img/19/players/177003.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/243.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/10.png"
+      },
+      {
+        name: "Messi",
+        number: 10,
         overall: 95,
-        selected: false
+        selected: false,
+        position: "RM",
+        img:
+          "https://futhead.cursecdn.com/static/img/18/players_worldcup/158023.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/241.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/52.png"
+      },
+      {
+        name: "Kante",
+        number: 17,
+        overall: 91,
+        selected: false,
+        position: "CDM",
+        img: "https://futhead.cursecdn.com/static/img/19/players/215914.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/5.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/18.png"
+      },
+      {
+        name: "Marcelo",
+        number: 12,
+        overall: 89,
+        selected: false,
+        position: "LB",
+        img: "https://futhead.cursecdn.com/static/img/19/players/176676.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/243.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/54.png"
+      },
+      {
+        name: "Ramos",
+        number: 4,
+        overall: 92,
+        selected: false,
+        position: "CB",
+        img: "https://futhead.cursecdn.com/static/img/19/players/155862.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/243.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/45.png"
+      },
+      {
+        name: "Chiellini",
+        number: 3,
+        overall: 91,
+        selected: false,
+        position: "CB",
+        img: "https://futhead.cursecdn.com/static/img/19/players/138956.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/45.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/27.png"
+      },
+      {
+        name: "Carvajal",
+        number: 21,
+        overall: 88,
+        selected: false,
+        position: "RB",
+        img: "https://futhead.cursecdn.com/static/img/19/players/204963.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/243.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/45.png"
+      },
+      {
+        name: "Buffon",
+        number: 1,
+        overall: 88,
+        selected: false,
+        position: "GK",
+        img: "https://futhead.cursecdn.com/static/img/19/players/1179.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/73.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/27.png"
       }
     ],
     benchPlayers: [
-      { name: "Casillas", number: 24, overall: 84, selected: false },
-      { name: "Bonucci", number: 19, overall: 87, selected: false },
-      { name: "Pique", number: 31, overall: 88, selected: false },
-      { name: "Silva", number: 2, overall: 89, selected: false },
-      { name: "Hazard", number: 14, overall: 91, selected: false },
-      { name: "Pogba", number: 6, overall: 89, selected: false },
-      { name: "Lewandowski", number: 33, overall: 91, selected: false }
+      {
+        name: "Casillas",
+        number: 24,
+        overall: 84,
+        selected: false,
+        position: "GK",
+        img: "https://futhead.cursecdn.com/static/img/19/players/5479.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/236.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/45.png"
+      },
+      {
+        name: "Bonucci",
+        number: 19,
+        overall: 87,
+        selected: false,
+        position: "CB",
+        img: "https://futhead.cursecdn.com/static/img/19/players/184344.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/45.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/27.png"
+      },
+      {
+        name: "Pique",
+        number: 31,
+        overall: 88,
+        selected: false,
+        position: "CB",
+        img: "https://futhead.cursecdn.com/static/img/19/players/152729.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/241.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/45.png"
+      },
+      {
+        name: "Silva",
+        number: 2,
+        overall: 89,
+        selected: false,
+        img: "https://futhead.cursecdn.com/static/img/19/players/218667.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/10.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/38.png"
+      },
+      {
+        name: "Hazard",
+        number: 14,
+        overall: 91,
+        selected: false,
+        img: "https://futhead.cursecdn.com/static/img/19/players/183277.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/5.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/7.png"
+      },
+      {
+        name: "Pogba",
+        number: 6,
+        overall: 89,
+        selected: false,
+        img: "https://futhead.cursecdn.com/static/img/19/players/195864.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/11.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/18.png"
+      },
+      {
+        name: "Lewandowski",
+        number: 33,
+        overall: 91,
+        selected: false,
+        img: "https://futhead.cursecdn.com/static/img/19/players/188545.png",
+        club: "https://futhead.cursecdn.com/static/img/19/clubs/21.png",
+        nationality: "https://futhead.cursecdn.com/static/img/19/nations/37.png"
+      }
     ],
     selectedPlayers: []
   };
@@ -160,16 +265,21 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="app">
         <Header />
         <div className="container">
-          <Bench
+          {/* <Bench
             benchPlayers={this.state.benchPlayers}
             handleSelectPlayer={this.handleSelectPlayer}
             selectedPlayers={this.state.selectedPlayers}
-          />
+          /> */}
           <Pitch
             players={this.state.players}
+            handleSelectPlayer={this.handleSelectPlayer}
+            selectedPlayers={this.state.selectedPlayers}
+          />
+          <Bench
+            benchPlayers={this.state.benchPlayers}
             handleSelectPlayer={this.handleSelectPlayer}
             selectedPlayers={this.state.selectedPlayers}
           />
