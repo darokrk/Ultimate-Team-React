@@ -1,6 +1,8 @@
 .bench {
-  height: 50%;
   background: grey;
-  padding: 10px;
-  margin: 0 10px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  display: flex;
+  justify-content: center;
+  height: 200px;
 }
