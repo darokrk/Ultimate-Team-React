@@ -1,8 +1,29 @@
 .bench {
-  background: grey;
+  background: rgba(20, 30, 48, .7);
+  background: -webkit-linear-gradient(to right, rgba(36, 59, 85, .6), rgba(20, 30, 48, .7));
+  background: linear-gradient(to right, rgba(36, 59, 85, .7), rgba(20, 30, 48, .7));
   grid-column-start: 2;
   grid-column-end: 3;
   display: flex;
   justify-content: center;
-  height: 200px;
+  align-items: center;
+
+  [class*=player__wrapper-] {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+
+    &:hover {
+      .player {
+        top: -50%;
+      }
+    }
+  }
+
+  .player {
+    position: absolute;
+    transition: 0.25s linear;
+    top: 0;
+  }
 }
