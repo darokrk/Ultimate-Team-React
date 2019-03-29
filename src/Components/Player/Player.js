@@ -2,10 +2,14 @@ import React from "react";
 import "./Player.scss";
 
 const Player = props => {
+  let playerClass = "player";
+  if (props.selected) {
+    playerClass = "player picked";
+  }
   return (
     <div className={`player__wrapper-${props.index}`}>
       <div
-        className={props.selected ? "player picked" : "player"}
+        className={playerClass}
         onClick={() => props.handleSelectPlayer(props.player, props.index)}
       >
         <div className="player__info">
