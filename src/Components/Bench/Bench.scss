@@ -4,5 +4,24 @@
   grid-column-end: 3;
   display: flex;
   justify-content: center;
-  height: 200px;
+  align-items: center;
+
+  [class*=player__wrapper-] {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 2px;
+
+    &:hover {
+      .player {
+        top: -45%;
+      }
+    }
+  }
+
+  .player {
+    position: absolute;
+    transition: 0.25s linear;
+    top: 0;
+  }
 }
