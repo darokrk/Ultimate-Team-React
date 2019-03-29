@@ -8,9 +8,20 @@ const Player = props => {
         className={props.selected ? "player picked" : "player"}
         onClick={() => props.handleSelectPlayer(props.player, props.index)}
       >
-        {props.player.number}
+        <div className="player__info">
+          <span>{props.player.number}</span>
+          <span>
+            <strong>{props.player.position}</strong>
+          </span>
+          <img className="info__club" src={props.player.club} alt="" />
+          <img
+            className="info__nationality"
+            src={props.player.nationality}
+            alt=""
+          />
+        </div>
+        <img className="player__img" src={props.player.img} alt="" />
       </div>
-      {props.player.name}
     </div>
   );
 };

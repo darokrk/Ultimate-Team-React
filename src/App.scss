@@ -1,6 +1,14 @@
+.app {
+  background: url('../src/images/ultimate-pitch.jpg') no-repeat;
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+}
+
 .container {
-  display: flex;
-  max-width: 1200px;
-  justify-content: center;
-  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1000px 1fr;
+  grid-template-rows: 685px 90px;
+  grid-column-gap: 50px;
+  overflow: hidden;
 }
