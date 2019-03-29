@@ -268,11 +268,6 @@ class App extends Component {
       <div className="app">
         <Header />
         <div className="container">
-          {/* <Bench
-            benchPlayers={this.state.benchPlayers}
-            handleSelectPlayer={this.handleSelectPlayer}
-            selectedPlayers={this.state.selectedPlayers}
-          /> */}
           <Pitch
             players={this.state.players}
             handleSelectPlayer={this.handleSelectPlayer}
