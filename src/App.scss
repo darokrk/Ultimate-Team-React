@@ -8,8 +8,8 @@
 .container {
   display: grid;
   grid-template-columns: 1fr 1000px 1fr;
-  grid-template-rows: 685px 150px;
+  grid-template-rows: 685px 155px;
   grid-column-gap: 50px;
-  grid-row-gap: 100px;
+  grid-row-gap: 90px;
   overflow: hidden;
 }
