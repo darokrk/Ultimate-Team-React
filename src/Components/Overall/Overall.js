@@ -9,7 +9,10 @@ const Overall = props => (
       <span>{props.overallPower}</span>
     </div>
     <div className="overall__display">
-      <div className="display__content" />
+      <div
+        className="display__content"
+        style={{ width: `${props.overallPower}%` }}
+      />
     </div>
   </div>
 );

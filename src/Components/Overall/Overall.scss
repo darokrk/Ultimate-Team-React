@@ -3,11 +3,14 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(5, 10%) 50%;
+  width: 80%;
   height: 80%;
   background: rgba(0, 0, 0, .7);
-  padding: 10px;
+  padding: 20px;
   margin: 20px;
   color: #FFE769;
+  font-size: 1.2rem;
+  font-weight: 600;
 }
 
 .overall__name {
@@ -15,14 +18,19 @@
   justify-content: center;
   align-items: center;
   margin: 0;
-  border: 1px solid red;
 }
 
 .overall__power {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  border: 2px solid blue;
-  font-size: 1rem;
-  font-weight: 600;
+}
+
+.overall__display {
+  padding: 10px 0;
+
+  .display__content {
+    height: 100%;
+    background: #FFE769;
+  }
 }
