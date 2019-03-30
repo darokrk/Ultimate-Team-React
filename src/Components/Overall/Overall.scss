@@ -10,7 +10,7 @@
   color: #FFE769;
 }
 
-.overall__slogan {
+.overall__name {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,7 +18,10 @@
   border: 1px solid red;
 }
 
-.overall__circle {
+.overall__power {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   border: 2px solid blue;
   font-size: 1rem;
   font-weight: 600;

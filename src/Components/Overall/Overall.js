@@ -4,7 +4,10 @@ import "./Overall.scss";
 const Overall = props => (
   <div className="overall__wrapper">
     <div className="overall__name">Team Name</div>
-    <div className="overall__power">Rating: {props.overallPower}</div>
+    <div className="overall__power">
+      <span>Rating:</span>
+      <span>{props.overallPower}</span>
+    </div>
     <div className="overall__display">
       <div className="display__content" />
     </div>
