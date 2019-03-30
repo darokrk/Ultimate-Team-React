@@ -31,7 +31,7 @@ const Pitch = props => {
           {playersOnTheField}
         </div>
       </div>
-      <Overall text={overallPower} />
+      <Overall overallPower={overallPower} />
     </>
   );
 };
