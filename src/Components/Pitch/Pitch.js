@@ -4,7 +4,12 @@ import Overall from "../Overall/Overall";
 import "./Pitch.scss";
 
 const Pitch = props => {
-  const { players } = props;
+  const {
+    players,
+    handleSelectPlayer,
+    formation,
+    handleFormationChange
+  } = props;
 
   let overallPower = players.reduce(
     (total, player) => total + player.overall,
@@ -19,20 +24,20 @@ const Pitch = props => {
         player={player}
         index={i}
         selected={player.selected}
-        handleSelectPlayer={props.handleSelectPlayer}
+        handleSelectPlayer={handleSelectPlayer}
       />
     );
   });
   return (
     <>
       <div className="pitch">
-        <div className={`field__wrapper field__wrapper-${props.formation}`}>
+        <div className={`field__wrapper field__wrapper-${formation}`}>
           {playersOnTheField}
         </div>
       </div>
       <Overall
-        handleFormationChange={props.handleFormationChange}
-        formation={props.formation}
+        handleFormationChange={handleFormationChange}
+        formation={formation}
         overallPower={overallPower}
       />
     </>
