@@ -27,7 +27,7 @@ const Pitch = props => {
   return (
     <>
       <div className="pitch">
-        <div className="field__wrapper field__wrapper-1-4-1-3-2">
+        <div className={`field__wrapper field__wrapper-${props.formation}`}>
           {playersOnTheField}
         </div>
       </div>

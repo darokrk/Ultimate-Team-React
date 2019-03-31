@@ -24,7 +24,7 @@ const Overall = props => (
       <option value="1-4-1-2-1-2">1-4-1-2-1-2</option>
       <option value="1-4-2-3-1">1-4-2-3-1</option>
       <option value="1-4-2-2-2">1-4-2-2-2</option>
-      <option value="1-4-3-2-2">1-4-3-2-2</option>
+      <option value="1-3-3-2-2">1-3-3-2-2</option>
     </select>
     <div>Manager</div>
   </div>

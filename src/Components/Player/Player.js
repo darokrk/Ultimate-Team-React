@@ -1,5 +1,6 @@
 import React from "react";
 import "./Player.scss";
+import "../../data/formations.scss";
 
 const Player = props => {
   let playerClass = "player";
