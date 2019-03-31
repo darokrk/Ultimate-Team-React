@@ -16,7 +16,6 @@ const Pitch = props => {
     return (
       <Player
         key={player.name}
-        // id={player.name}
         player={player}
         index={i}
         selected={player.selected}
