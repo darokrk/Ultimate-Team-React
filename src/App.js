@@ -1,9 +1,10 @@
 import React, { Component } from "react";
 import Pitch from "./Components/Pitch/Pitch";
 import Bench from "./Components/Bench/Bench";
+import Header from "./Components/Header/Header";
+import PlayerInfo from "./Components/PlayerInfo/PlayerInfo";
 
 import "./App.scss";
-import Header from "./Components/Header/Header";
 import players from "./data/players.json";
 import benchPlayers from "./data/benchPlayers.json";
 
@@ -112,6 +113,7 @@ class App extends Component {
             handleSelectPlayer={this.handleSelectPlayer}
             selectedPlayers={selectedPlayers}
           />
+          <PlayerInfo selectedPlayers={selectedPlayers} />
         </div>
       </div>
     );
