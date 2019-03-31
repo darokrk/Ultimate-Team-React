@@ -1,0 +1,25 @@
+.player__more {
+  display: grid;
+  width: 80%;
+  height: 80%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 225px 1fr;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  margin-left: 20%;
+  padding: 20px;
+  background: rgba($color: #fff, $alpha: 0.7);
+  border: 1px solid red;
+  border-radius: 20px;
+
+  .more__look {
+    border: 1px solid blue;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    .player {
+      width: 180px;
+      height: 180px;
+    }
+  }
+}

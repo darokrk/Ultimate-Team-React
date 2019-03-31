@@ -6,7 +6,13 @@
     "position": "ST",
     "img": "https://futhead.cursecdn.com/static/img/18/players_worldcup/20801.png",
     "club": "https://futhead.cursecdn.com/static/img/19/clubs/45.png",
-    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/38.png"
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/38.png",
+    "pac": 91,
+    "sho": 94,
+    "pas": 82,
+    "dri": 91,
+    "def": 36,
+    "phy": 80
   },
   {
     "name": "Aguero",
@@ -16,7 +22,13 @@
     "position": "ST",
     "img": "https://futhead.cursecdn.com/static/img/19/players/153079.png",
     "club": "https://futhead.cursecdn.com/static/img/19/clubs/10.png",
-    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/52.png"
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/52.png",
+    "pac": 85,
+    "sho": 90,
+    "pas": 77,
+    "dri": 90,
+    "def": 29,
+    "phy": 74
   },
   {
     "name": "Neymar",
@@ -26,7 +38,13 @@
     "position": "LM",
     "img": "https://futhead.cursecdn.com/static/img/17/players/190871.png",
     "club": "https://futhead.cursecdn.com/static/img/19/clubs/73.png",
-    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/54.png"
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/54.png",
+    "pac": 93,
+    "sho": 85,
+    "pas": 84,
+    "dri": 96,
+    "def": 33,
+    "phy": 60
   },
   {
     "name": "Modric",
@@ -46,7 +64,13 @@
     "position": "RM",
     "img": "https://futhead.cursecdn.com/static/img/18/players_worldcup/158023.png",
     "club": "https://futhead.cursecdn.com/static/img/19/clubs/241.png",
-    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/52.png"
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/52.png",
+    "pac": 77,
+    "sho": 77,
+    "pas": 91,
+    "dri": 92,
+    "def": 71,
+    "phy": 68
   },
   {
     "name": "Kante",
@@ -56,7 +80,13 @@
     "position": "CDM",
     "img": "https://futhead.cursecdn.com/static/img/19/players/215914.png",
     "club": "https://futhead.cursecdn.com/static/img/19/clubs/5.png",
-    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/18.png"
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/18.png",
+    "pac": 81,
+    "sho": 69,
+    "pas": 79,
+    "dri": 82,
+    "def": 88,
+    "phy": 85
   },
   {
     "name": "Marcelo",
@@ -66,7 +96,13 @@
     "position": "LB",
     "img": "https://futhead.cursecdn.com/static/img/19/players/176676.png",
     "club": "https://futhead.cursecdn.com/static/img/19/clubs/243.png",
-    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/54.png"
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/54.png",
+    "pac": 83,
+    "sho": 72,
+    "pas": 84,
+    "dri": 91,
+    "def": 82,
+    "phy": 83
   },
   {
     "name": "Ramos",
@@ -76,7 +112,13 @@
     "position": "CB",
     "img": "https://futhead.cursecdn.com/static/img/19/players/155862.png",
     "club": "https://futhead.cursecdn.com/static/img/19/clubs/243.png",
-    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/45.png"
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/45.png",
+    "pac": 76,
+    "sho": 64,
+    "pas": 72,
+    "dri": 73,
+    "def": 92,
+    "phy": 85
   },
   {
     "name": "Chiellini",
@@ -86,17 +128,29 @@
     "position": "CB",
     "img": "https://futhead.cursecdn.com/static/img/19/players/138956.png",
     "club": "https://futhead.cursecdn.com/static/img/19/clubs/45.png",
-    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/27.png"
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/27.png",
+    "pac": 71,
+    "sho": 47,
+    "pas": 58,
+    "dri": 61,
+    "def": 93,
+    "phy": 85
   },
   {
     "name": "Carvajal",
     "number": 21,
-    "overall": 88,
+    "overall": 86,
     "selected": false,
     "position": "RB",
     "img": "https://futhead.cursecdn.com/static/img/19/players/204963.png",
     "club": "https://futhead.cursecdn.com/static/img/19/clubs/243.png",
-    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/45.png"
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/45.png",
+    "pac": 84,
+    "sho": 46,
+    "pas": 77,
+    "dri": 82,
+    "def": 83,
+    "phy": 81
   },
   {
     "name": "Buffon",
@@ -106,6 +160,12 @@
     "position": "GK",
     "img": "https://futhead.cursecdn.com/static/img/19/players/1179.png",
     "club": "https://futhead.cursecdn.com/static/img/19/clubs/73.png",
-    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/27.png"
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/27.png",
+    "div": 89,
+    "han": 88,
+    "kic": 75,
+    "ref": 84,
+    "spe": 50,
+    "pos": 91
   }
 ]
