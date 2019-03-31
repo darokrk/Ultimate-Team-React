@@ -5,7 +5,7 @@ const Overall = props => (
   <div className="overall__wrapper">
     <div className="overall__name">Team Name</div>
     <div className="overall__power">
-      <span>Rating:</span>
+      <span>Rating</span>
       <span>{props.overallPower}</span>
     </div>
     <div className="overall__display">
@@ -22,6 +22,7 @@ const Overall = props => (
       <option value="1-4-1-3-2">1-4-2-2-2</option>
       <option value="1-4-1-3-2">1-4-3-2-2</option>
     </select>
+    <div>Manager</div>
   </div>
 );
 
