@@ -188,7 +188,8 @@ class App extends Component {
         nationality: "https://futhead.cursecdn.com/static/img/19/nations/37.png"
       }
     ],
-    selectedPlayers: []
+    selectedPlayers: [],
+    formation: "1-4-1-3-2"
   };
 
   handleSelectPlayer = (activePlayer, index) => {
@@ -257,6 +258,12 @@ class App extends Component {
     this.setState({ players, benchPlayers, selectedPlayers: [] });
   };
 
+  handleFormationChange = e => {
+    this.setState({
+      formation: e.target.value
+    });
+  };
+
   componentDidUpdate() {
     if (this.state.selectedPlayers.length >= 2) {
       this.pitchUpdate();
@@ -272,6 +279,8 @@ class App extends Component {
             players={this.state.players}
             handleSelectPlayer={this.handleSelectPlayer}
             selectedPlayers={this.state.selectedPlayers}
+            handleFormationChange={this.handleFormationChange}
+            formation={this.state.formation}
           />
           <Bench
             benchPlayers={this.state.benchPlayers}

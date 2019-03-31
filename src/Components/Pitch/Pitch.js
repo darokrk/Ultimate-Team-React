@@ -31,7 +31,11 @@ const Pitch = props => {
           {playersOnTheField}
         </div>
       </div>
-      <Overall overallPower={overallPower} />
+      <Overall
+        handleFormationChange={props.handleFormationChange}
+        formation={props.formation}
+        overallPower={overallPower}
+      />
     </>
   );
 };
