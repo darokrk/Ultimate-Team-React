@@ -94,21 +94,23 @@ class App extends Component {
   }
 
   render() {
+    const { players, selectedPlayers, formation, benchPlayers } = this.state;
+
     return (
       <div className="app">
         <Header />
         <div className="container">
           <Pitch
-            players={this.state.players}
+            players={players}
             handleSelectPlayer={this.handleSelectPlayer}
-            selectedPlayers={this.state.selectedPlayers}
+            selectedPlayers={selectedPlayers}
             handleFormationChange={this.handleFormationChange}
-            formation={this.state.formation}
+            formation={formation}
           />
           <Bench
-            benchPlayers={this.state.benchPlayers}
+            benchPlayers={benchPlayers}
             handleSelectPlayer={this.handleSelectPlayer}
-            selectedPlayers={this.state.selectedPlayers}
+            selectedPlayers={selectedPlayers}
           />
         </div>
       </div>
