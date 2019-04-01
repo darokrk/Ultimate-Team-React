@@ -7,12 +7,13 @@
     "img": "https://futhead.cursecdn.com/static/img/19/players/5479.png",
     "club": "https://futhead.cursecdn.com/static/img/19/clubs/236.png",
     "nationality": "https://futhead.cursecdn.com/static/img/19/nations/45.png",
-    "div": 88,
-    "han": 77,
-    "kic": 62,
-    "ref": 85,
-    "spe": 60,
-    "pos": 86
+    "stats": {
+      "han": 77,
+      "kic": 62,
+      "ref": 85,
+      "spe": 60,
+      "pos": 86
+    }
   },
   {
     "name": "Bonucci",
@@ -23,12 +24,14 @@
     "img": "https://futhead.cursecdn.com/static/img/19/players/184344.png",
     "club": "https://futhead.cursecdn.com/static/img/19/clubs/45.png",
     "nationality": "https://futhead.cursecdn.com/static/img/19/nations/27.png",
-    "pac": 62,
-    "sho": 59,
-    "pas": 70,
-    "dri": 72,
-    "def": 88,
-    "phy": 81
+    "stats": {
+      "pac": 62,
+      "sho": 59,
+      "pas": 70,
+      "dri": 72,
+      "def": 88,
+      "phy": 81
+    }
   },
   {
     "name": "Pique",
@@ -39,12 +42,14 @@
     "img": "https://futhead.cursecdn.com/static/img/19/players/152729.png",
     "club": "https://futhead.cursecdn.com/static/img/19/clubs/241.png",
     "nationality": "https://futhead.cursecdn.com/static/img/19/nations/45.png",
-    "pac": 56,
-    "sho": 62,
-    "pas": 70,
-    "dri": 67,
-    "def": 88,
-    "phy": 77
+    "stats": {
+      "pac": 56,
+      "sho": 62,
+      "pas": 70,
+      "dri": 67,
+      "def": 88,
+      "phy": 77
+    }
   },
   {
     "name": "Silva",
@@ -55,12 +60,14 @@
     "img": "https://futhead.cursecdn.com/static/img/19/players/218667.png",
     "club": "https://futhead.cursecdn.com/static/img/19/clubs/10.png",
     "nationality": "https://futhead.cursecdn.com/static/img/19/nations/38.png",
-    "pac": 79,
-    "sho": 73,
-    "pas": 84,
-    "dri": 90,
-    "def": 47,
-    "phy": 59
+    "stats": {
+      "pac": 79,
+      "sho": 73,
+      "pas": 84,
+      "dri": 90,
+      "def": 47,
+      "phy": 59
+    }
   },
   {
     "name": "Hazard",
@@ -71,12 +78,14 @@
     "img": "https://futhead.cursecdn.com/static/img/19/players/183277.png",
     "club": "https://futhead.cursecdn.com/static/img/19/clubs/5.png",
     " nationality": "https://futhead.cursecdn.com/static/img/19/nations/7.png",
-    "pac": 91,
-    "sho": 82,
-    "pas": 86,
-    "dri": 94,
-    "def": 35,
-    "phy": 67
+    "stats": {
+      "pac": 91,
+      "sho": 82,
+      "pas": 86,
+      "dri": 94,
+      "def": 35,
+      "phy": 67
+    }
   },
   {
     "name": "Pogba",
@@ -87,12 +96,14 @@
     "img": "https://futhead.cursecdn.com/static/img/19/players/195864.png",
     "club": "https://futhead.cursecdn.com/static/img/19/clubs/11.png",
     "nationality": "https://futhead.cursecdn.com/static/img/19/nations/18.png",
-    "pac": 76,
-    "sho": 80,
-    "pas": 87,
-    "dri": 86,
-    "def": 70,
-    "phy": 88
+    "stats": {
+      "pac": 76,
+      "sho": 80,
+      "pas": 87,
+      "dri": 86,
+      "def": 70,
+      "phy": 88
+    }
   },
   {
     "name": "Lewandowski",
@@ -103,11 +114,13 @@
     "img": "https://futhead.cursecdn.com/static/img/19/players/188545.png",
     "club": "https://futhead.cursecdn.com/static/img/19/clubs/21.png",
     "nationality": "https://futhead.cursecdn.com/static/img/19/nations/37.png",
-    "pac": 79,
-    "sho": 90,
-    "pas": 76,
-    "dri": 86,
-    "def": 42,
-    "phy": 83
+    "stats": {
+      "pac": 79,
+      "sho": 90,
+      "pas": 76,
+      "dri": 86,
+      "def": 42,
+      "phy": 83
+    }
   }
 ]
