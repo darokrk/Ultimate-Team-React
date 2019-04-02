@@ -88,6 +88,10 @@ class App extends Component {
     });
   };
 
+  componentWillMount() {
+    console.log(this.props.match);
+  }
+
   componentDidUpdate() {
     if (this.state.selectedPlayers.length >= 2) {
       this.pitchUpdate();
