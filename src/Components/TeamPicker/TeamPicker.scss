@@ -1,0 +1,7 @@
+.managers__wrapper {
+  border: 1px solid;
+  display: grid;
+  grid-template-columns: repeat(1, 400px);
+  grid-template-rows: repeat(1, 400px);
+  justify-content: center;
+}
