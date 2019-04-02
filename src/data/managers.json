@@ -1,31 +1,43 @@
 [{
     "name": "Jürgen Klopp",
     "img": "//premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/man279.png",
-    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/21.png"
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/21.png",
+    "birthDate": "16 June 1967",
+    "desc": "is a German professional football coach and former player who is the manager of Premier League club Liverpool. Often credited with popularising the football philosophy known as Gegenpressing, Klopp is regarded by many as one of the best managers in the world."
   },
   {
     "name": "Mauricio Pochettino",
     "img": "//premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/man38223.png",
-    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/52.png"
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/52.png",
+    "birthDate": "2 March 1972",
+    "desc": "is an Argentine football manager and former player. He is the manager of Premier League club Tottenham Hotspur. A centre back, he spent 17 years as a professional player, ten of which were in La Liga with Espanyol where he scored 13 goals in 275 games and won two Copa del Rey trophies."
   },
   {
     "name": "Josep Guardiola",
     "img": "//premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/man37974.png",
-    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/45.png"
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/45.png",
+    "birthDate": "18 January 1971",
+    "desc": "is a Spanish professional football coach and former player who is the manager of Premier League club Manchester City. He is considered to be one of the greatest and most successful managers of all time. He holds the record for the most consecutive league wins in La Liga, Bundesliga and Premier League."
   },
   {
     "name": "Massimiliano Allegri",
     "img": "//i.imgur.com/F8DNoBd.png",
-    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/27.png"
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/27.png",
+    "birthDate": "11 August 1967",
+    "desc": "is an Italian professional football manager and former player currently in charge of Serie A club Juventus. He spent his career playing for various Italian clubs. After joining Juventus in 2014, he won four consecutive domestic doubles between 2015 and 2018, the only coach to achieve this feat in the top 5 European leagues."
   },
   {
     "name": "José Mourinho",
     "img": "//premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/man134.png",
-    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/38.png"
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/38.png",
+    "birthDate": "26 January 1963",
+    "desc": "is a Portuguese professional football coach and former player. As a manager, Mourinho has won 25 major honours, making him one of the most successful managers of all time. He was named Portuguese Coach of the Century by the Portuguese Football Federation in 2015."
   },
   {
     "name": "Zinedine Zidane",
     "img": "https://xtratime.in/wp-content/uploads/2018/05/zidane-png-zinedine-zidane-429-262x300.png",
-    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/18.png"
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/18.png",
+    "birthDate": "23 June 1972",
+    "desc": " is a French former professional football player and current manager of Real Madrid. Widely regarded as one of the greatest players of all time, Zidane was an elite playmaker, renowned for his elegance, vision, ball control and technique, and played as an attacking midfielder for Cannes, Bordeaux, Juventus and Real Madrid."
   }
 ]

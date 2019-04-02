@@ -3,10 +3,15 @@ import "./Manager.scss";
 
 const Manager = props => {
   return (
-    <div>
-      <img src={props.manager.img} alt="" />
-      <span>{props.manager.name}</span>
-      <img src={props.manager.nationality} alt="" />
+    <div className="manager">
+      <img className="manager__img" src={props.manager.img} alt="" />
+      <div className="manager__info">
+        <img className="manager__flag" src={props.manager.nationality} alt="" />
+        <strong className="manager__name">{props.manager.name}</strong>
+        <span>{props.manager.birthDate}</span>
+      </div>
+      <div className="manager__desc">{props.manager.desc}</div>
+      <div />
     </div>
   );
 };
