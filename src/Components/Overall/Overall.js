@@ -1,4 +1,6 @@
 import React from "react";
+import Player from "../Player/Player";
+import managers from "../../data/managers.json";
 import "./Overall.scss";
 
 const Overall = props => {
@@ -29,7 +31,10 @@ const Overall = props => {
         <option value="1-4-2-2-2">1-4-2-2-2</option>
         <option value="1-3-3-2-2">1-3-3-2-2</option>
       </select>
-      <div>Manager</div>
+      <div>
+        <span>Manager</span>
+        {/* <Player player={managers[3]} /> */}
+      </div>
     </div>
   );
 };

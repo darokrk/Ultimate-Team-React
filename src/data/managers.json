@@ -1,0 +1,31 @@
+[{
+    "name": "Jürgen Klopp",
+    "img": "//premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/man279.png",
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/21.png"
+  },
+  {
+    "name": "Mauricio Pochettino",
+    "img": "//premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/man38223.png",
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/52.png"
+  },
+  {
+    "name": "Josep Guardiola",
+    "img": "//premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/man37974.png",
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/45.png"
+  },
+  {
+    "name": "Massimiliano Allegri",
+    "img": "//i.imgur.com/F8DNoBd.png",
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/27.png"
+  },
+  {
+    "name": "José Mourinho",
+    "img": "//premierleague-static-files.s3.amazonaws.com/premierleague/photos/players/250x250/man134.png",
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/38.png"
+  },
+  {
+    "name": "Zinedine Zidane",
+    "img": "https://xtratime.in/wp-content/uploads/2018/05/zidane-png-zinedine-zidane-429-262x300.png",
+    "nationality": "https://futhead.cursecdn.com/static/img/19/nations/18.png"
+  }
+]
