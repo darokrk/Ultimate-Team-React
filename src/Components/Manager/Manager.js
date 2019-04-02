@@ -1,4 +1,5 @@
 import React from "react";
+import "./Manager.scss";
 
 const Manager = props => {
   return (
