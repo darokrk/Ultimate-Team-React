@@ -9,15 +9,19 @@ const PlayerInfo = props => {
 
   if (selectedPlayers[0]) {
     let stats = selectedPlayers[0].stats;
-    stats = Object.keys(stats).map((statistic, i) => (
-      <div key={i}>{`${statistic}: ${stats[statistic]}`}</div>
+    stats = Object.keys(stats).map((attr, i) => (
+      <div className="stats__wrapper" key={i}>
+        <div className="stats__attr">{attr}</div>
+        <div className="stats__value">{stats[attr]}</div>
+      </div>
     ));
     playerInfo = (
-      <div className="player__more">
-        <div className="more__look">
+      <div className="playercard__info">
+        <div className="playercard__picture">
           <Player player={selectedPlayers[0]} />
+          <span className="playercard__name">{selectedPlayers[0].name}</span>
         </div>
-        <div className="more__stats">{stats}</div>
+        <div className="playercard__stats">{stats}</div>
       </div>
     );
   }

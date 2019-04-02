@@ -1,25 +1,73 @@
-.player__more {
+.playercard__info {
   display: grid;
-  width: 80%;
+  width: 72%;
   height: 80%;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 225px 1fr;
+  grid-template-rows: 260px 1fr;
   grid-column-start: 1;
   grid-row-start: 1;
   margin-left: 20%;
-  padding: 20px;
-  background: rgba($color: #fff, $alpha: 0.7);
-  border: 1px solid red;
   border-radius: 20px;
 
-  .more__look {
-    border: 1px solid blue;
+  .playercard__picture {
+    display: flex;
     grid-column-start: 1;
     grid-column-end: 3;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba($color: #DADCDB, $alpha: 0.9);
+    border-radius: 20px 20px 0 0;
 
     .player {
-      width: 180px;
-      height: 180px;
+      width: 60%;
+      height: 80%;
+      box-shadow: 0 8px 6px -6px #000;
+    }
+
+    .playercard__name {
+      padding: 10px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+  }
+
+  .playercard__stats {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    align-items: center;
+    background: rgba($color: #eaede6, $alpha: 0.9);
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+
+    .stats__wrapper {
+      display: flex;
+      height: 80%;
+      justify-content: center;
+      align-items: center;
+
+      .stats__attr,
+      .stats__value {
+        display: flex;
+        width: 20%;
+        height: 75%;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: .5px;
+      }
+
+      .stats__value {
+        background: #8A8C8B;
+        color: #fff;
+        font-size: 1.2rem;
+        font-weight: 500;
+        box-shadow: 3px 3px 3px rgb(80, 75, 75);
+      }
     }
   }
 }
