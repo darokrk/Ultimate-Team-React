@@ -5,7 +5,8 @@ import "./TeamPicker.scss";
 
 class TeamPicker extends Component {
   state = {
-    index: 0
+    index: 0,
+    choosedManager: false
   };
 
   handleClickNext = () => {
@@ -17,6 +18,12 @@ class TeamPicker extends Component {
   handleClickPrevious = () => {
     this.setState({
       index: this.state.index - 1
+    });
+  };
+
+  handleManagerSelect = managerName => {
+    this.setState({
+      choosedManager: managerName
     });
   };
 
@@ -34,20 +41,28 @@ class TeamPicker extends Component {
 
   render() {
     const managersList = managers.map(manager => (
-      <Manager key={manager.name} manager={manager} />
+      <Manager
+        handleManagerSelect={() => this.handleManagerSelect(manager.name)}
+        key={manager.name}
+        manager={manager}
+      />
     ));
     return (
-      <div>
-        <div>
-          <h1>Welcome to ultimate team app</h1>
-          <span>Please choose your manager</span>
+      <div className="picker__wrapper">
+        <div className="picker__header">
+          <h1>Welcome to the Ultimate Team App</h1>
+          <span>Please choose your manager:</span>
         </div>
         <div className="managers__wrapper">
           {managersList[this.state.index]}
         </div>
-        <div>
-          <button onClick={this.handleClickPrevious}>Previous</button>
-          <button onClick={this.handleClickNext}>Next</button>
+        <div className="managers__buttons">
+          <button className="button" onClick={this.handleClickPrevious}>
+            Previous
+          </button>
+          <button className="button" onClick={this.handleClickNext}>
+            Next
+          </button>
         </div>
       </div>
     );

@@ -3,7 +3,7 @@ import "./Manager.scss";
 
 const Manager = props => {
   return (
-    <div className="manager">
+    <div className="manager" onClick={props.handleManagerSelect}>
       <img className="manager__img" src={props.manager.img} alt="" />
       <div className="manager__info">
         <img className="manager__flag" src={props.manager.nationality} alt="" />
