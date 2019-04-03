@@ -40,6 +40,8 @@ class TeamPicker extends Component {
   }
 
   render() {
+    let teamPicker;
+    let managerPicker;
     const managersList = managers.map(manager => (
       <Manager
         handleManagerSelect={() => this.handleManagerSelect(manager.name)}
@@ -47,24 +49,46 @@ class TeamPicker extends Component {
         manager={manager}
       />
     ));
+    if (this.state.choosedManager) {
+      teamPicker = (
+        <div className="picker__wrapper">
+          <div className="picker__header">
+            <h1>Welcome to the Ultimate Team App</h1>
+          </div>
+          <form className="picker__form">
+            <label>Please insert your team name:</label>
+            <input type="text" />
+            <button className="button" onClick={this.handleClickNext}>
+              Submit
+            </button>
+          </form>
+        </div>
+      );
+    } else
+      managerPicker = (
+        <div className="picker__wrapper">
+          <div className="picker__header">
+            <h1>Welcome to the Ultimate Team App</h1>
+            <span>Please insert your team name:</span>
+          </div>
+          <div className="managers__wrapper">
+            {managersList[this.state.index]}
+          </div>
+          <div className="managers__buttons">
+            <button className="button" onClick={this.handleClickPrevious}>
+              Previous
+            </button>
+            <button className="button" onClick={this.handleClickNext}>
+              Next
+            </button>
+          </div>
+        </div>
+      );
     return (
-      <div className="picker__wrapper">
-        <div className="picker__header">
-          <h1>Welcome to the Ultimate Team App</h1>
-          <span>Please choose your manager:</span>
-        </div>
-        <div className="managers__wrapper">
-          {managersList[this.state.index]}
-        </div>
-        <div className="managers__buttons">
-          <button className="button" onClick={this.handleClickPrevious}>
-            Previous
-          </button>
-          <button className="button" onClick={this.handleClickNext}>
-            Next
-          </button>
-        </div>
-      </div>
+      <>
+        {managerPicker}
+        {teamPicker}
+      </>
     );
   }
 }
