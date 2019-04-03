@@ -2,15 +2,16 @@ import React from "react";
 import "./Manager.scss";
 
 const Manager = props => {
+  const { img, nationality, name, birthDate, desc } = props.manager;
   return (
     <div className="manager" onClick={props.handleManagerSelect}>
-      <img className="manager__img" src={props.manager.img} alt="" />
+      <img className="manager__img" src={img} alt="" />
       <div className="manager__info">
-        <img className="manager__flag" src={props.manager.nationality} alt="" />
-        <strong className="manager__name">{props.manager.name}</strong>
-        <span>{props.manager.birthDate}</span>
+        <img className="manager__flag" src={nationality} alt="" />
+        <strong className="manager__name">{name}</strong>
+        <span>{birthDate}</span>
       </div>
-      <div className="manager__desc">{props.manager.desc}</div>
+      <div className="manager__desc">{desc}</div>
       <div />
     </div>
   );
