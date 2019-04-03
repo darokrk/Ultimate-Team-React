@@ -1,13 +1,15 @@
 .manager {
-  // border: 1px solid red;
+  border: 1px solid rgb(179, 178, 178);
   display: grid;
   grid-template-columns: repeat(2, 50%);
   grid-template-rows: repeat(2, 50%);
   border-radius: 20px;
-  box-shadow: 3px 3px 3px 3px rgb(120, 120, 120);
+  overflow: hidden;
+  cursor: pointer;
+  transition: .2s;
 
   &:hover {
-    box-shadow: 1px 1px 10px 3px rgb(192, 182, 39);
+    box-shadow: 0px 0px 10px 3px rgb(214, 203, 43);
   }
 }
 
@@ -34,5 +36,9 @@
   grid-column-start: 1;
   grid-column-end: 3;
   padding: 20px;
-  border-top: 1px solid blue;
+  border-top: 3px solid red;
+  background: #4b6cb7;
+  background: -webkit-linear-gradient(to right, #182848, #4b6cb7);
+  background: linear-gradient(to right, #182848, #4b6cb7);
+  color: rgb(243, 243, 243);
 }
