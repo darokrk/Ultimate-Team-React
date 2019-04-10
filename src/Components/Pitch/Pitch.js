@@ -8,7 +8,8 @@ const Pitch = props => {
     players,
     handleSelectPlayer,
     formation,
-    handleFormationChange
+    handleFormationChange,
+    teamName
   } = props;
 
   let overallPower = players.reduce(
@@ -39,6 +40,7 @@ const Pitch = props => {
         handleFormationChange={handleFormationChange}
         formation={formation}
         overallPower={overallPower}
+        teamName={teamName}
       />
     </>
   );

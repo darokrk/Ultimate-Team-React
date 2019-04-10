@@ -4,11 +4,11 @@ import managers from "../../data/managers.json";
 import "./Overall.scss";
 
 const Overall = props => {
-  const { overallPower, handleFormationChange, formation } = props;
+  const { overallPower, handleFormationChange, formation, teamName } = props;
 
   return (
     <div className="overall__wrapper">
-      <div className="overall__name">Team Name</div>
+      <div className="overall__name">{teamName} Team</div>
       <div className="overall__power">
         <span>Rating</span>
         <span>{overallPower}</span>
