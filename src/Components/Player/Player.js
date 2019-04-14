@@ -1,13 +1,18 @@
 import React from "react";
 import "./Player.scss";
+import PropTypes from "prop-types";
 import "../../data/formations.scss";
 
 const Player = props => {
   const { selected, index, player, handleSelectPlayer } = props;
 
   let playerClass = "player";
+  let playerClub = null;
   if (selected) {
     playerClass = "player picked";
+  }
+  if (player.club) {
+    playerClub = <img className="info__club" src={player.club} alt="" />;
   }
   return (
     <div className={`player__wrapper-${index}`}>
@@ -20,13 +25,20 @@ const Player = props => {
           <span>
             <strong>{player.position}</strong>
           </span>
-          <img className="info__club" src={player.club} alt="" />
+          {playerClub}
           <img className="info__nationality" src={player.nationality} alt="" />
         </div>
         <img className="player__img" src={player.img} alt="" />
       </div>
     </div>
   );
+};
+
+Player.propTypes = {
+  selected: PropTypes.bool,
+  index: PropTypes.number,
+  player: PropTypes.object,
+  handleSelectPlayer: PropTypes.func
 };
 
 export default Player;

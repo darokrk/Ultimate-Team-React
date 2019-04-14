@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ManagerPicker from "../ManagerPicker/ManagerPicker";
+import ManagerPicker from "../../Components/ManagerPicker/ManagerPicker";
 import "./TeamPicker.scss";
 
 class TeamPicker extends Component {

@@ -1,5 +1,6 @@
 import React from "react";
 import Player from "../Player/Player";
+import PropTypes from "prop-types";
 import "./PlayerInfo.scss";
 
 const PlayerInfo = props => {
@@ -27,6 +28,10 @@ const PlayerInfo = props => {
   }
 
   return <>{playerInfo}</>;
+};
+
+PlayerInfo.propTypes = {
+  selectedPlayers: PropTypes.array
 };
 
 export default PlayerInfo;
