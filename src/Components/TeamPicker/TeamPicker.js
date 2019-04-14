@@ -33,8 +33,8 @@ class TeamPicker extends Component {
     e.preventDefault();
     if (teamName.length <= 2) {
       alert("Team name must have more than 2 letters");
+      return;
     }
-    // this.props.history.push(`/team/${this.state.teamName}`);
     this.props.history.push({
       pathname: `/team/${this.state.teamName}`,
       choosedManager: this.state.choosedManager,
