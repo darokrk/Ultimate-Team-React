@@ -77,9 +77,11 @@ class TeamPicker extends Component {
             <form className="picker__form" onSubmit={this.handleSubmit}>
               <label>Please insert your team name:</label>
               <input
+                className="form__input"
                 type="text"
                 value={this.state.teamName}
                 onChange={this.handleTeamName}
+                required
               />
               <button className="button">Submit</button>
             </form>
