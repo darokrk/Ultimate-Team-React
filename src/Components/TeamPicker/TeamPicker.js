@@ -11,14 +11,16 @@ class TeamPicker extends Component {
   };
 
   handleClickNext = () => {
+    const { index } = this.state;
     this.setState({
-      index: this.state.index + 1
+      index: index + 1
     });
   };
 
   handleClickPrevious = () => {
+    const { index } = this.state;
     this.setState({
-      index: this.state.index - 1
+      index: index - 1
     });
   };
 
@@ -29,16 +31,16 @@ class TeamPicker extends Component {
   };
 
   handleSubmit = e => {
-    const { teamName } = this.state;
+    const { teamName, choosedManager, index } = this.state;
     e.preventDefault();
     if (teamName.length <= 2) {
       alert("Team name must have more than 2 letters");
       return;
     }
     this.props.history.push({
-      pathname: `/team/${this.state.teamName}`,
-      choosedManager: this.state.choosedManager,
-      indexManager: this.state.index
+      pathname: `/team/${teamName}`,
+      choosedManager: choosedManager,
+      indexManager: index
     });
   };
 
@@ -48,11 +50,12 @@ class TeamPicker extends Component {
   };
 
   componentDidUpdate() {
-    if (this.state.index > 5) {
+    const { index } = this.state;
+    if (index > 5) {
       this.setState({
         index: 0
       });
-    } else if (this.state.index < 0) {
+    } else if (index < 0) {
       this.setState({
         index: 5
       });
@@ -60,6 +63,7 @@ class TeamPicker extends Component {
   }
 
   render() {
+    const { teamName, choosedManager, index } = this.state;
     let teamPicker;
     let managerPicker;
     const managersList = managers.map(manager => (
@@ -69,7 +73,7 @@ class TeamPicker extends Component {
         manager={manager}
       />
     ));
-    if (this.state.choosedManager) {
+    if (choosedManager) {
       teamPicker = (
         <div className="picker__wrapper">
           <div className="picker__header">
@@ -79,7 +83,7 @@ class TeamPicker extends Component {
               <input
                 className="form__input"
                 type="text"
-                value={this.state.teamName}
+                value={teamName}
                 onChange={this.handleTeamName}
                 required
               />
@@ -95,9 +99,7 @@ class TeamPicker extends Component {
             <h1>Welcome to the Ultimate Team App</h1>
             <span>Please select your team manager:</span>
           </div>
-          <div className="managers__wrapper">
-            {managersList[this.state.index]}
-          </div>
+          <div className="managers__wrapper">{managersList[index]}</div>
           <div className="managers__buttons">
             <button className="button" onClick={this.handleClickPrevious}>
               Previous
