@@ -37,7 +37,8 @@ class TeamPicker extends Component {
     // this.props.history.push(`/team/${this.state.teamName}`);
     this.props.history.push({
       pathname: `/team/${this.state.teamName}`,
-      choosedManager: this.state.choosedManager
+      choosedManager: this.state.choosedManager,
+      indexManager: this.state.index
     });
   };
 
@@ -83,13 +84,6 @@ class TeamPicker extends Component {
               <button className="button">Submit</button>
             </form>
           </div>
-          {/* <form className="picker__form">
-            <label>Please insert your team name:</label>
-            <input type="text" />
-            <button className="button" onClick={this.handleClickNext}>
-              Submit
-            </button>
-          </form> */}
         </div>
       );
     } else
@@ -97,7 +91,7 @@ class TeamPicker extends Component {
         <div className="picker__wrapper">
           <div className="picker__header">
             <h1>Welcome to the Ultimate Team App</h1>
-            <span>Please insert your team name:</span>
+            <span>Please select your team manager:</span>
           </div>
           <div className="managers__wrapper">
             {managersList[this.state.index]}

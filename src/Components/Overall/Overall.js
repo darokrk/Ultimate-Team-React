@@ -4,7 +4,14 @@ import managers from "../../data/managers.json";
 import "./Overall.scss";
 
 const Overall = props => {
-  const { overallPower, handleFormationChange, formation, teamName } = props;
+  const {
+    overallPower,
+    handleFormationChange,
+    formation,
+    teamName,
+    choosedManager,
+    indexManager
+  } = props;
 
   return (
     <div className="overall__wrapper">
@@ -33,7 +40,8 @@ const Overall = props => {
       </select>
       <div>
         <span>Manager</span>
-        {/* <Player player={managers[3]} /> */}
+        <Player player={managers[indexManager]} />
+        <span>{choosedManager}</span>
       </div>
     </div>
   );

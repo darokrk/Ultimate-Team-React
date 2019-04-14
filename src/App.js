@@ -91,6 +91,7 @@ class App extends Component {
   componentWillMount() {
     console.log(this.props.match);
     console.log(this.props.location.choosedManager);
+    console.log(this.props.location);
   }
 
   componentDidUpdate() {
@@ -101,6 +102,8 @@ class App extends Component {
 
   render() {
     const { players, selectedPlayers, formation, benchPlayers } = this.state;
+    const { choosedManager, indexManager } = this.props.location;
+    const { teamId } = this.props.match.params;
 
     return (
       <div className="app">
@@ -112,7 +115,9 @@ class App extends Component {
             selectedPlayers={selectedPlayers}
             handleFormationChange={this.handleFormationChange}
             formation={formation}
-            teamName={this.props.match.params.teamId}
+            teamName={teamId}
+            choosedManager={choosedManager}
+            indexManager={indexManager}
           />
           <Bench
             benchPlayers={benchPlayers}
