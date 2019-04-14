@@ -1,6 +1,7 @@
 import React from "react";
 import Player from "../Player/Player";
 import Overall from "../Overall/Overall";
+import PropTypes from "prop-types";
 import "./Pitch.scss";
 
 const Pitch = props => {
@@ -8,7 +9,10 @@ const Pitch = props => {
     players,
     handleSelectPlayer,
     formation,
-    handleFormationChange
+    handleFormationChange,
+    teamName,
+    choosedManager,
+    indexManager
   } = props;
 
   let overallPower = players.reduce(
@@ -39,9 +43,22 @@ const Pitch = props => {
         handleFormationChange={handleFormationChange}
         formation={formation}
         overallPower={overallPower}
+        teamName={teamName}
+        choosedManager={choosedManager}
+        indexManager={indexManager}
       />
     </>
   );
+};
+
+Pitch.propTypes = {
+  players: PropTypes.array.isRequired,
+  handleSelectPlayer: PropTypes.func,
+  handleFormationChange: PropTypes.func,
+  formation: PropTypes.string,
+  teamName: PropTypes.string,
+  choosedManager: PropTypes.string,
+  indexManager: PropTypes.number
 };
 
 export default Pitch;

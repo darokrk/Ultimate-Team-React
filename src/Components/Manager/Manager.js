@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./Manager.scss";
 
 const Manager = props => {
@@ -15,6 +16,16 @@ const Manager = props => {
       <div />
     </div>
   );
+};
+
+Manager.propTypes = {
+  manager: PropTypes.shape({
+    img: PropTypes.string,
+    nationality: PropTypes.string,
+    name: PropTypes.string,
+    birthDate: PropTypes.string,
+    desc: PropTypes.string
+  })
 };
 
 export default Manager;
