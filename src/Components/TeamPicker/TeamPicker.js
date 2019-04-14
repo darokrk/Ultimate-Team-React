@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import Manager from "../Manager/Manager";
-import managers from "../../data/managers.json";
+import ManagerPicker from "../ManagerPicker/ManagerPicker";
 import "./TeamPicker.scss";
 
 class TeamPicker extends Component {
@@ -65,14 +64,6 @@ class TeamPicker extends Component {
   render() {
     const { teamName, choosedManager, index } = this.state;
     let teamPicker;
-    let managerPicker;
-    const managersList = managers.map(manager => (
-      <Manager
-        handleManagerSelect={() => this.handleManagerSelect(manager.name)}
-        key={manager.name}
-        manager={manager}
-      />
-    ));
     if (choosedManager) {
       teamPicker = (
         <div className="picker__wrapper">
@@ -93,29 +84,15 @@ class TeamPicker extends Component {
         </div>
       );
     } else
-      managerPicker = (
-        <div className="picker__wrapper">
-          <div className="picker__header">
-            <h1>Welcome to the Ultimate Team App</h1>
-            <span>Please select your team manager:</span>
-          </div>
-          <div className="managers__wrapper">{managersList[index]}</div>
-          <div className="managers__buttons">
-            <button className="button" onClick={this.handleClickPrevious}>
-              Previous
-            </button>
-            <button className="button" onClick={this.handleClickNext}>
-              Next
-            </button>
-          </div>
-        </div>
+      teamPicker = (
+        <ManagerPicker
+          indexManager={index}
+          handleManagerSelect={this.handleManagerSelect}
+          handleClickPrevious={this.handleClickPrevious}
+          handleClickNext={this.handleClickNext}
+        />
       );
-    return (
-      <>
-        {managerPicker}
-        {teamPicker}
-      </>
-    );
+    return <>{teamPicker}</>;
   }
 }
 
