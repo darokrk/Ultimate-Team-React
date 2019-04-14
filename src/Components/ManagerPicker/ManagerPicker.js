@@ -1,5 +1,6 @@
 import React from "react";
 import Manager from "../Manager/Manager";
+import PropTypes from "prop-types";
 import managers from "../../data/managers.json";
 
 const ManagerPicker = props => {
@@ -33,6 +34,13 @@ const ManagerPicker = props => {
       </div>
     </div>
   );
+};
+
+ManagerPicker.propTypes = {
+  handleManagerSelect: PropTypes.func,
+  handleClickPrevious: PropTypes.func,
+  handleClickNext: PropTypes.func,
+  indexManager: PropTypes.number
 };
 
 export default ManagerPicker;

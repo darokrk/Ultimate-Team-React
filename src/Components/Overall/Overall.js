@@ -1,5 +1,6 @@
 import React from "react";
 import Player from "../Player/Player";
+import PropTypes from "prop-types";
 import managers from "../../data/managers.json";
 import "./Overall.scss";
 
@@ -45,6 +46,15 @@ const Overall = props => {
       </div>
     </div>
   );
+};
+
+Overall.propTypes = {
+  overallPower: PropTypes.string,
+  handleFormationChange: PropTypes.func,
+  formation: PropTypes.string,
+  teamName: PropTypes.string,
+  choosedManager: PropTypes.string,
+  indexManager: PropTypes.number
 };
 
 export default Overall;

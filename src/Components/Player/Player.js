@@ -1,5 +1,6 @@
 import React from "react";
 import "./Player.scss";
+import PropTypes from "prop-types";
 import "../../data/formations.scss";
 
 const Player = props => {
@@ -31,6 +32,13 @@ const Player = props => {
       </div>
     </div>
   );
+};
+
+Player.propTypes = {
+  selected: PropTypes.bool,
+  index: PropTypes.number,
+  player: PropTypes.object,
+  handleSelectPlayer: PropTypes.func
 };
 
 export default Player;

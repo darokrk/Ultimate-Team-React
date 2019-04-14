@@ -3,6 +3,7 @@ import Pitch from "./Components/Pitch/Pitch";
 import Bench from "./Components/Bench/Bench";
 import Header from "./Components/Header/Header";
 import PlayerInfo from "./Components/PlayerInfo/PlayerInfo";
+import PropTypes from "prop-types";
 
 import "./App.scss";
 import players from "./data/players.json";
@@ -14,6 +15,14 @@ class App extends Component {
     benchPlayers: benchPlayers,
     selectedPlayers: [],
     formation: "1-4-1-3-2"
+  };
+
+  static propTypes = {
+    match: PropTypes.object,
+    location: PropTypes.shape({
+      indexManager: PropTypes.number,
+      choosedManager: PropTypes.string
+    })
   };
 
   handleSelectPlayer = (activePlayer, index) => {
@@ -34,8 +43,7 @@ class App extends Component {
     }
 
     if (selectedPlayers.length >= 2) {
-      const removedPlayer = selectedPlayers.shift();
-      // removedPlayer.selected = false;
+      selectedPlayers.shift();
     }
 
     if (activePlayer.selected) {
@@ -87,12 +95,6 @@ class App extends Component {
       formation: e.target.value
     });
   };
-
-  componentWillMount() {
-    console.log(this.props.match);
-    console.log(this.props.location.choosedManager);
-    console.log(this.props.location);
-  }
 
   componentDidUpdate() {
     if (this.state.selectedPlayers.length >= 2) {

@@ -1,5 +1,6 @@
 import React from "react";
 import Player from "../Player/Player";
+import PropTypes from "prop-types";
 import "./Bench.scss";
 
 const Bench = props => {
@@ -17,6 +18,11 @@ const Bench = props => {
     );
   });
   return <div className="bench">{playersOnBench}</div>;
+};
+
+Bench.propTypes = {
+  benchPlayers: PropTypes.array,
+  handleSelectPlayer: PropTypes.func
 };
 
 export default Bench;
