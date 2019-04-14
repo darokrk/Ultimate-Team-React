@@ -38,7 +38,7 @@ const Overall = props => {
         <option value="1-4-2-2-2">1-4-2-2-2</option>
         <option value="1-3-3-2-2">1-3-3-2-2</option>
       </select>
-      <div>
+      <div className="overall__manager">
         <span>Manager</span>
         <Player player={managers[indexManager]} />
         <span>{choosedManager}</span>
