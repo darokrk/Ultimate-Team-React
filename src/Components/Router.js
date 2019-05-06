@@ -6,8 +6,8 @@ import TeamPicker from "./TeamPicker/TeamPicker";
 const Router = () => (
   <BrowserRouter>
     <Switch>
-      <Route exact path="/Ultimate-Team-React/" component={TeamPicker} />
-      <Route path="/Ultimate-Team-React/:teamId" component={App} />
+      <Route exact path={process.env.PUBLIC_URL + "/"} component={TeamPicker} />
+      <Route path={process.env.PUBLIC_URL + "/team/:teamId"} component={App} />
     </Switch>
   </BrowserRouter>
 );
