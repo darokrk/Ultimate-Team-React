@@ -7,7 +7,7 @@ const Router = () => (
   <BrowserRouter>
     <Switch>
       <Route exact path="/Ultimate-Team-React/" component={TeamPicker} />
-      <Route path="/Ultimate-Team-React/team/:teamId" component={App} />
+      <Route path="/Ultimate-Team-React/:teamId" component={App} />
     </Switch>
   </BrowserRouter>
 );
