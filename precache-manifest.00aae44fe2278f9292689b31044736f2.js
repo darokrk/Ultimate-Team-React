@@ -8,19 +8,19 @@ self.__precacheManifest = [
     "url": "/Ultimate-Team-React/static/js/runtime~main.62cb438a.js"
   },
   {
-    "revision": "6276392b3e6acdf55658",
-    "url": "/Ultimate-Team-React/static/js/main.ad7d3232.chunk.js"
+    "revision": "4bca309929fc82730aca",
+    "url": "/Ultimate-Team-React/static/js/main.08a25426.chunk.js"
   },
   {
     "revision": "5fd9dd28c5e813f2eec0",
     "url": "/Ultimate-Team-React/static/js/2.0d410209.chunk.js"
   },
   {
-    "revision": "6276392b3e6acdf55658",
+    "revision": "4bca309929fc82730aca",
     "url": "/Ultimate-Team-React/static/css/main.f74a7596.chunk.css"
   },
   {
-    "revision": "cf764ee3fba215a26507c62d1c48d214",
+    "revision": "49ff7445b94cd4bf79a20eb68abb90d6",
     "url": "/Ultimate-Team-React/index.html"
   }
 ];
