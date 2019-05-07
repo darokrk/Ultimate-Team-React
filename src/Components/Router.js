@@ -6,8 +6,8 @@ import TeamPicker from "./TeamPicker/TeamPicker";
 const Router = () => (
   <HashRouter>
     <Switch>
-      <Route exact path={process.env.PUBLIC_URL + "/"} component={TeamPicker} />
-      <Route path={process.env.PUBLIC_URL + "/team/:teamId"} component={App} />
+      <Route exact path="/" component={TeamPicker} />
+      <Route path="/team/:teamId" component={App} />
     </Switch>
   </HashRouter>
 );
